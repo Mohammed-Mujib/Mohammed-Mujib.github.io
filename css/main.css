@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --text: #081b13;
+    --background: #f3fcf9;
+    --primary: #49ca94;
+    --secondary: #8cadde;
+    --accent: #6874d4;
+    --text_dark: #e4f7ef;
+    --background_dark: #030c09;
+    --primary_dark: #35b680;
+    --secondary_dark: #214273;
+    --accent_dark: #2b3797;
+  }
