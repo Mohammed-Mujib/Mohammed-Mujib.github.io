@@ -16,9 +16,6 @@
 }
 body {
     background-color: var(--background_dark);
-    /* font-family: "Madimi One", sans-serif;
-        font-weight: 400;
-        font-style: normal; */
     font-family: "Eczar", serif;
     font-optical-sizing: auto;
     /* font-weight: <weight>; */
@@ -47,6 +44,7 @@ a {
     color: var(--background);
     transition: 0.3s;
     padding: 10px;
+    font-size: 20px;
 }
 
 .myNav li a:hover {
@@ -122,7 +120,8 @@ a {
     content: "?";
     color: var(--primary_dark);
     animation-name: change-color;
-    animation-direction: 3s;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
 }
 
 .about{
@@ -205,16 +204,14 @@ a {
     padding: 30px;
 }
 .socil{
-    
-    background-color:var(--primary_dark);
     border-radius: 10px;
     font-size: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 .socil a{
+    background-color:var(--primary_dark);
     color: black;
     display: block;
     width: 100%;
@@ -223,6 +220,7 @@ a {
 }
 .socil a:hover{
     box-shadow: 0px 0px 5px 3px rgba(255, 255, 255, 0.826);
+    transform: translateY(-10px);
 }
 #facebook:hover{
     background-color: rgb(102, 102, 211);
@@ -231,9 +229,9 @@ a {
 }
 #instagram:hover{
     color: whitesmoke;
-    background: #12c2e9;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(45deg, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #833ab4;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #fcb045, #fd1d1d, #833ab4);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(295deg, #fcb045, #fd1d1d, #833ab4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 #X:hover{
@@ -248,7 +246,6 @@ background: linear-gradient(45deg, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ E
 #gmail:hover{
     color: red;
     background-color: whitesmoke;
-
 }
 #github:hover{
     background-color: black;
@@ -260,19 +257,37 @@ background: linear-gradient(45deg, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ E
         width: 100%;
     }
     .My_name {
-        font-size: 20px;
+        font-size: 40px;
     }
 }
 /*small*/
 @media (min-width: 768px) {
+    .My_name {
+        font-size: 40px;
+    }
 }
 /*medium*/
 @media (min-width: 992px) {
+    .My_name {
+        font-size: 50px;
+    }
 }
 /*larg*/
 @media (min-width: 1200px) {
+    .My_name {
+        font-size: 60px;
+    }
 }
 @media (max-width: 1199px) {
 }
 @media (max-width: 991px) {
+}
+
+@keyframes change-color {
+    50%{
+        color: var(--text_dark);
+    }
+    100%{
+        color: var(--primary_dark);
+    }
 }
