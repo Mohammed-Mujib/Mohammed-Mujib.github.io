@@ -22,7 +22,6 @@ body {
   font-style: normal;
   color: var(--text_dark);
 }
-
 a {
   text-decoration: none;
 }
@@ -296,6 +295,7 @@ a {
 }
 /*small*/
 @media (min-width: 768px) {
+  
 }
 /*medium*/
 @media (min-width: 992px) {
@@ -306,10 +306,12 @@ a {
   
 }
 @media (max-width: 1199px) {
+
 }
 @media (max-width: 991px) {
-}
 
+}
+/*Anamations*/
 @keyframes change-color {
   50% {
     color: var(--text_dark);
