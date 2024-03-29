@@ -48,7 +48,7 @@ a {
 .myNav li a:hover {
   color: var(--text);
 }
-#modes i{
+#modes i {
   cursor: pointer;
 }
 .continer {
@@ -111,13 +111,14 @@ a {
   border-radius: 10px;
   box-shadow: 0px 0px 10px 3px #35b680;
 }
-.land .left h1 span {
+.land .left h1 #que {
   color: var(--primary_dark);
-  animation-name: change-color;
-  animation-duration: 2.5s;
+  animation-name: change-color-light;
+  animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
+
 .about {
   padding-top: 20px;
   display: grid;
@@ -350,5 +351,13 @@ a {
   }
   100% {
     color: var(--primary_dark);
+  }
+}
+@keyframes change-color-light {
+  50% {
+    color: var(--text);
+  }
+  100% {
+    color: var(--primary);
   }
 }
