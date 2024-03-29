@@ -28,6 +28,9 @@ a {
 .myHeader {
   background-color: var(--primary_dark);
   color: var(--text_dark);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 .myNav {
   width: 400px;
@@ -44,6 +47,9 @@ a {
 }
 .myNav li a:hover {
   color: var(--text);
+}
+#modes i{
+  cursor: pointer;
 }
 .continer {
   width: 95%;
