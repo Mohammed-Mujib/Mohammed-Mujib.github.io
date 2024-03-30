@@ -8,26 +8,35 @@
   --primary: #49ca94;
   --secondary: #8cadde;
   --accent: #6874d4;
-  --text_dark: #e4f7ef;
-  --background_dark: #030c09;
-  --primary_dark: #35b680;
-  --secondary_dark: #214273;
-  --accent_dark: #2b3797;
+  --icon :white;
+  
+
+}
+.dark_mode{
+  --text: #e4f7ef;
+  --background: #030c09;
+  --primary: #35b680;
+  --secondary: #214273;
+  --accent: #2b3797;
+  --icon :black;
 }
 body {
-  background-color: var(--background_dark);
+  background-color: var(--background);
   font-family: "Eczar", serif;
   font-optical-sizing: auto;
   /* font-weight: <weight>; */
   font-style: normal;
-  color: var(--text_dark);
+  color: var(--text);
 }
 a {
   text-decoration: none;
 }
+i{
+  color: var(--icon);
+}
 .myHeader {
-  background-color: var(--primary_dark);
-  color: var(--text_dark);
+  background-color: var(--primary);
+  color: var(--text);
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -50,6 +59,7 @@ a {
 }
 #modes i {
   cursor: pointer;
+  color: var(--text);
 }
 .continer {
   width: 95%;
@@ -94,7 +104,7 @@ a {
   font-size: 40px;
 }
 .name::first-letter {
-  color: var(--primary_dark);
+  color: var(--primary);
 }
 .land .left h1 {
   position: relative;
@@ -112,7 +122,7 @@ a {
   box-shadow: 0px 0px 10px 3px #35b680;
 }
 .land .left h1 #que {
-  color: var(--primary_dark);
+  color: var(--primary);
   animation-name: change-color-light;
   animation-duration: 2s;
   animation-iteration-count: infinite;
@@ -134,7 +144,7 @@ a {
   position: absolute;
   width: 10px;
   height: 100%;
-  background-color: var(--primary_dark);
+  background-color: var(--primary);
   right: 30px;
   box-shadow: 0px 0px 10px 3px #35b680;
   border-radius: 10px;
@@ -153,7 +163,7 @@ a {
   margin-top: 20px;
 }
 .titel_section {
-  color: var(--primary_dark);
+  color: var(--primary);
 }
 .skills {
   text-align: center;
@@ -173,7 +183,7 @@ a {
 }
 .skill {
   height: 180px;
-  background-color: var(--primary_dark);
+  background-color: var(--primary);
   border-radius: 10px;
   font-size: 60px;
   display: grid;
@@ -186,6 +196,9 @@ a {
   justify-content: center;
   align-items: center;
   color: black;
+}
+svg path{
+  fill: var(--icon);
 }
 .skill small {
   font-size: 20px;
@@ -216,16 +229,14 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.socil a {
-  background-color: var(--primary_dark);
+  background-color: var(--primary);
   color: black;
   display: block;
   width: 100%;
-  border-radius: inherit;
   transition: 0.3s;
+
 }
-.socil a:hover {
+.socil:hover {
   box-shadow: 0px 0px 5px 3px rgba(255, 255, 255, 0.826);
   transform: translateY(-10px);
 }
@@ -267,11 +278,12 @@ a {
   background-color: black;
   color: whitesmoke;
 }
+
 /* responsive area */
 /*mobil*/
 @media (max-width: 767px) {
   .myNav {
-    width: 100%;
+    width: 90%;
   }
   .My_name {
     font-size: 28px;
@@ -308,7 +320,7 @@ a {
 /*small*/
 @media (min-width: 768px) {
   .myNav {
-    width: 100%;
+    width: 90%;
   }
   .My_name {
     font-size: 30px;
@@ -347,15 +359,15 @@ a {
 /*Anamations*/
 @keyframes change-color {
   50% {
-    color: var(--text_dark);
+    color: var(--icon);
   }
   100% {
-    color: var(--primary_dark);
+    color: var(--primary);
   }
 }
 @keyframes change-color-light {
   50% {
-    color: var(--text);
+    color: var(--icon);
   }
   100% {
     color: var(--primary);
