@@ -9,8 +9,8 @@
   --secondary: #8cadde;
   --accent: #6874d4;
   --icon :white;
-  
-
+  --git_text :whitesmoke;
+  --email_text:red;
 }
 .dark_mode{
   --text: #e4f7ef;
@@ -19,6 +19,8 @@
   --secondary: #214273;
   --accent: #2b3797;
   --icon :black;
+  --git_text :whitesmoke;
+  --email_text:red;
 }
 body {
   background-color: var(--background);
@@ -230,53 +232,55 @@ svg path{
   justify-content: center;
   align-items: center;
   background-color: var(--primary);
-  color: black;
+  color: var(--icon);
   display: block;
   width: 100%;
   transition: 0.3s;
+  padding-top: 15px;
+  padding-bottom: 15px;
 
 }
 .socil:hover {
   box-shadow: 0px 0px 5px 3px rgba(255, 255, 255, 0.826);
   transform: translateY(-10px);
 }
-#facebook:hover {
+#facebook i:hover {
   background-color: #0866ff;
   color: whitesmoke;
   box-shadow: 0px 0px 5px 3px #0866ff;
 }
-#instagram:hover {
-  color: whitesmoke;
-  background: #833ab4; /* fallback for old browsers */
+#instagram i:hover {
+  color: var(--git_text);
+  background: #833ab4; 
   background: -webkit-linear-gradient(
     to left,
     #fcb045,
     #fd1d1d,
     #833ab4
-  ); /* Chrome 10-25, Safari 5.1-6 */
+  );
   background: linear-gradient(
     295deg,
     #fcb045,
     #fd1d1d,
     #833ab4
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  );
 }
-#X:hover {
+#X i:hover {
   background-color: black;
-  color: whitesmoke;
+  color: var(--git_text);
 }
-#linkedin:hover {
+#linkedin i:hover {
   background-color: #0a66c2;
-  color: whitesmoke;
+  color: var(--git_text);
   box-shadow: 0px 0px 5px 3px #0a66c2;
 }
-#gmail:hover {
-  color: red;
+#gmail i:hover {
+  color: var(--email_text);
   background-color: whitesmoke;
 }
-#github:hover {
+#github i:hover {
   background-color: black;
-  color: whitesmoke;
+  color: var(--git_text);
 }
 
 /* responsive area */
