@@ -290,6 +290,7 @@ svg path{
 @media (max-width: 767px) {
   .myNav {
     width: 80%;
+    font-size: 10px;
   }
   .My_name {
     font-size: 28px;
