@@ -16,15 +16,15 @@ mode_but.onclick =function(){
     localStorage.setItem("dark_mode","off")
   }
 }
-let observer = new IntersectionObserver((enteries)=>{
-  enteries.forEach((entry)=>{
-    if(entry.isIntersecting){
-    entry.target.classList.add("show");
-  }
-    // else{
-    //   enyry.target.classList.remove("show");
-    // }
-  })
-});
-let hiddenelement = document.querySelectorAll(".hidden");
-hiddenelement.forEach((el)=>observer.observe(el));
+// let observer = new IntersectionObserver((enteries)=>{
+//   enteries.forEach((entry)=>{
+//     if(entry.isIntersecting){
+//     entry.target.classList.add("show");
+//   }
+//     // else{
+//     //   enyry.target.classList.remove("show");
+//     // }
+//   })
+// });
+// let hiddenelement = document.querySelectorAll(".hidden");
+// hiddenelement.forEach((el)=>observer.observe(el));

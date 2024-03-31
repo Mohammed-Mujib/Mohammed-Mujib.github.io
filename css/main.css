@@ -362,7 +362,7 @@ svg path{
 }
 @media (max-width: 991px) {
 }
-.my_skilss:last-child{
+/* .my_skilss:last-child{
   transition-delay:2s ;
 }
 .hidden{
@@ -375,7 +375,7 @@ svg path{
 opacity: 1;
 transition: 1.5s;
 transform: translateX(0px);
-}
+} */
 /*Anamations*/
 @keyframes change-color {
   50% {
